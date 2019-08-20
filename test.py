@@ -18,3 +18,10 @@ for i in range(1,10):
     print ""	
 
 
+#打印菱形
+for i in range(-3,4):
+    if i<0:
+        j=-i
+    else:
+        j=i
+    print " "*j+"*"*(7-2*j) 
