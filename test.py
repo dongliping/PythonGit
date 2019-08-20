@@ -46,3 +46,21 @@ for i in range(-3,4):
 	else:
 		print "*"*7		
 		
+#输入5个数字，并用冒泡排序
+nums=[]
+while len(nums)<5:
+	num=raw_input("enter a num").strip().lstrip('0')
+	if not num.isdigit():
+		continue
+	print "the lentgh of {} is {}".format(num,len(nums))
+	nums.append(int(num))
+	
+for i in range(len(nums)):
+	for j in range(len(nums)-i-1):
+		flag=False
+		if nums[j]>nums[j+1]:
+			nums[j],nums[j+1]=nums[j+1],nums[j]
+			flag=True
+	if not flag:
+		break
+print nums
