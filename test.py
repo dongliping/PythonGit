@@ -27,3 +27,10 @@ for i in range(-3,4):
     print " "*j+"*"*(7-2*j) 
 	
 #打印镂空菱形
+for i in range(-3,4):
+    if i==-3 or i==3:
+        count=abs(i)
+        print " "*count+"*"
+    else:
+        count=abs(i)
+        print " "*count+"*"+" "*(5-2*count)+"*"
