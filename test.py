@@ -25,3 +25,5 @@ for i in range(-3,4):
     else:
         j=i
     print " "*j+"*"*(7-2*j) 
+	
+#打印镂空菱形
