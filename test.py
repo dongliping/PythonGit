@@ -34,3 +34,15 @@ for i in range(-3,4):
     else:
         count=abs(i)
         print " "*count+"*"+" "*(5-2*count)+"*"
+		
+#打印特殊菱形
+for i in range(-3,4):
+	if i<0:
+		a=abs(i)-1
+		print " "*a,
+		print "*"*(3-a)
+	elif i>0:
+		print " "*3+"*"*(4-i)
+	else:
+		print "*"*7		
+		
